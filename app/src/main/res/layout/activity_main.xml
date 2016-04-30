@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Intent Status: "/>
+        <TextView
+            android:id="@+id/intent_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Google API Status: "/>
+        <TextView
+            android:id="@+id/gapi_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bus ID: "/>
+        <EditText
+            android:id="@+id/bus_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="test" />
+        <Button
+            android:id="@+id/change_id_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change"
+            android:onClick="updateBusId"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/start_location_updates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Location Updates"
+            android:onClick="startLocationUpdates"/>
+        <Button
+            android:id="@+id/stop_location_updates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop Location Updates"
+            android:onClick="stopLocationUpdates"/>
+    </LinearLayout>
+</LinearLayout>
