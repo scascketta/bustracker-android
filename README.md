@@ -1,6 +1,8 @@
 # bustracker-android
 A simple Android service to post frequent fine location updates to a HTTP API. Does not attempt to conserve battery or bandwidth at the moment.
 
+:zap: [Shortcut to the actual tracking code](https://github.com/scascketta/bustracker-android/tree/master/app/src/main/java/com/scascketta/bustracker) :zap:
+
 ## Usage
 
 This assumes you're using AWS's API Gateway service to accept POST requests containing the following JSON body:
